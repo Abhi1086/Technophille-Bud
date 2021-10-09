@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="font-size: 18; font-weight: 800; ">Students Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		
+
+		<div class="form-control">
+			<label>
+				Q. Are you satisfied with the teaching staff and their teaching methods?
+      
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="method-1">
+				<input type="radio"
+					id="method-1"
+					name="method">Extremely satisfied</input>
+			</label>
+			<label for="method-2">
+				<input type="radio"
+					id="method-2"
+					name="method">Very Satisfied</input>
+			</label>
+			<label for="method-3">
+				<input type="radio"
+					id="method-3"
+					name="method">Satisfied</input>
+			</label>
+
+            <label for="method-3">
+				<input type="radio"
+					id="method-3"
+					name="method">Neutral</input>
+			</label>
+
+            <label for="method-3">
+				<input type="radio"
+					id="method-3"
+					name="method">Dissatisfied</input>
+			</label>
+
+            <label for="method-3">
+				<input type="radio"
+					id="method-3"
+					name="method">Extremely Dissatisfied</input>
+			</label>
+
+		</div>
+
+
+        <div class="form-control">
+			<label>
+				Q.How satisfied are you with the facilities provided by the college?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="facilites-1">
+				<input type="radio"
+					id="facilites-1"
+					name="facilites">Extremely satisfied</input>
+			</label>
+			<label for="facilites-2">
+				<input type="radio"
+					id="facilites-2"
+					name="facilites">Very Satisfied</input>
+			</label>
+			<label for="facilites-3">
+				<input type="radio"
+					id="facilites-3"
+					name="facilites">Satisfied</input>
+			</label>
+
+            <label for="facilites-3">
+				<input type="radio"
+					id="facilites-3"
+					name="facilites">Neutral</input>
+			</label>
+
+            <label for="facilites-3">
+				<input type="radio"
+					id="facilites-3"
+					name="facilites">Dissatisfied</input>
+			</label>
+
+            <label for="facilites-3">
+				<input type="radio"
+					id="facilites-3"
+					name="facilites">Extremely Dissatisfied</input>
+			</label>
+
+		</div>
+
+		  <div class="form-control">
+          <label>
+               Q. Was it easy to obtain the necessary resources from college library?
+          </label>
+          
+           <label for="library-1"> 
+             <input type="radio" id="library-1" name="library">Yes</input>
+           </label>
+
+           <label for="library-2"> 
+            <input type="radio" id="library-2" name="library">No</input>
+          </label>
+
+          </div>
+
+
+          <div class="form-control">
+            <label>
+                 Q. Are you satisfied with the teaching staff and thier teaching practices?
+            </label>
+            
+             <label for="practices-1"> 
+               <input type="radio" id="library-1" name="practices">Yes</input>
+             </label>
+  
+             <label for="practices-2"> 
+              <input type="radio" id="practices-2" name="practices">No</input>
+            </label>
+  
+            </div>
+
+
+
+             <div class="form-control">
+            <label>
+               Q.Do you think faculty and support staff at the college were helpful?
+            </label>
+            
+             <label for="library-1"> 
+               <input type="radio" id="helpful-1" name="hellpful">Very Helpful</input>
+             </label>
+
+             <label for="hellpful-2"> 
+                <input type="radio" id="helpful-2" name="hellpful">Helpful</input>
+              </label>
+
+              <label for="hellpful-3"> 
+                <input type="radio" id="helpful-3" name="hellpful">Niether Helpful nor unhelpful</input>
+              </label>
+  
+             <label for="hellpful-4"> 
+              <input type="radio" id="hellpful-4" name="hellpful">Very unhelpful</input>
+            </label>
+  
+            </div>
+
+
+		
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
